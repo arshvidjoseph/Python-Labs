@@ -1,2 +1,2 @@
-# Python-Codea
+# Python-Codes
 just simple python codes
