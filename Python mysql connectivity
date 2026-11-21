@@ -1,0 +1,8 @@
+import mysql.connector as m
+con=m.connect(host="localhost",user="root",passwd="student",database="Arshvid")
+c=con.cursor()
+q=
+c.execute(q)
+con.commit()
+con.commit()
+data=c.fetchall() #fetchmany(n),fetchone()
