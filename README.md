@@ -1,2 +1,2 @@
-# Python-Codes
+# Python-Labs
 just simple python codes
