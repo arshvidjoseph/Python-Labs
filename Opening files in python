@@ -1,1 +1,25 @@
-import
+f=open("txtin.txt","r") #opening a file by relative path
+f=open("s:\\main\\....","w") # opening a file by absolute path # "c:\\main\\..." or r"c:\main\..."
+# .txt for text file , .csv for csv files , .dat for binary files
+#"r" reading mode , "w" for writing mode , "a" for appending mode ("rb","wb","ab")
+#FileNotFoundError
+f.close()
+
+# TEXT FILE
+
+r=f.read() # read as whole for len(r) "\n" ie +2 is also included
+print(f) # <_io Text/OW....>
+readline(n) # n optional default one line len "\n" also included string
+readlines(n) # n optional default all lines list
+readlines(0) # alllines
+write(k+"\n") # string in a line
+writelines(["Aj","is","here"]) #Ajishere  #list of all elements in a line
+with open("txtin.txt","r") as f : # no need to close the file it will close when exiting the indendation
+f.seek(0) # move cursor to the beginning of the file
+f.seek(10,1) #move cursor to 10bytes forward from the current position
+f.seek(-10,1) #move cursor 10 bytes backward from the current position
+f.seek(-5,2) #move cursor 5 bytes backward from the end of the file
+#0 beginning , 1 current position , 2 end of the file
+f.tell() # current position of the cursor
+
+# CSV FILE
