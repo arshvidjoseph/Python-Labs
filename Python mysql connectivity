@@ -1,8 +1,7 @@
 import mysql.connector as m
-con=m.connect(host="localhost",user="root",passwd="student",database="Arshvid")
+con=m.connect(host="localhost",user="root",passwd="student",database="Arshvid") #connecting to mysql
 c=con.cursor()
-q=
-c.execute(q)
-con.commit()
-con.commit()
-data=c.fetchall() #fetchmany(n),fetchone()
+q= #quary
+c.execute(q) #executing the quary
+con.commit() #saving changes to mysql from python
+data=c.fetchall() #fetchmany(n),fetchone() #retriving data
