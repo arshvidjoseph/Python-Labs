@@ -1,1 +1,56 @@
-INSERT INTO table VALUES
+CREATE DATABASE aj27;
+
+USE aj27; #no need to use ";" here
+
+SHOW DATABASES;
+
+DROP DATABE AJ27;
+
+DROP TABLE emp;
+
+SHOW TABLES;
+
+CREATE TABLE arsh 
+(name VARCHAR(15) NOT NULL UNIQUE
+e_id INT(3) NOT NULL PRIMARY KEY
+sex CHAR(1)); #fixed length CHAR()
+
+INSERT INTO arsh(name,e_id)
+VALUES("Arun",101);
+
+INSET INTO arsh
+VALUES("Athul",102,"M");
+
+INSET INTO arsh
+VALUES("Athul",102,NULL);
+
+UPDATE arsh
+SET name="Arshvid"
+WHERE e_id=101 or e_id=100;
+
+DELETE FORM arsh
+WHERE name="Athul"; # delete rows
+
+ALTER TABLE arsh
+ADD (age INT(2));
+
+ALTER TABLE arsh
+MODIFY (age INT(1));
+
+ALTER TABLE arsh
+CHANGE age s_age  INT(2);
+
+ALTER TABLE arsh
+DROP PRIMARY KEY; # doesnt drop the coumn
+
+ALTER TABLE arsh
+ADD PRIMARY KEY (name); # already existing column name
+
+ALTER TABLE arsh
+DROP COLUMN age;
+
+SELECT * 
+FROM arsh;
+
+SELECT name,age 
+FROM arsh;
